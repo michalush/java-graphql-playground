@@ -25,7 +25,7 @@ public class GraphQLDataFetchers {
         return dataFetchingEnvironment -> {
             final Book book = dataFetchingEnvironment.getSource();
 
-            return bookLibrary.getAuthorByBookId(book.getId());
+            return bookLibrary.getAuthorById(book.getAuthorId());
         };
     }
 }
