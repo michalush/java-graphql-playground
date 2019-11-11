@@ -1,7 +1,8 @@
 directive @fetch(from : String!) on FIELD_DEFINITION
 
 type Query {
-  book(id: ID): Book
+  book(id: ID): Book,
+  author(id: ID): Author
 }
 
 type Book {
@@ -15,4 +16,5 @@ type Author {
   id: ID
   firstName: String
   lastName: String
+  books: [Book]
 }
