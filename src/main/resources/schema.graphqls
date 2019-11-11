@@ -1,5 +1,7 @@
+directive @fetch(from : String!) on FIELD_DEFINITION
+
 type Query {
-  bookById(id: ID): Book
+  book(id: ID): Book
 }
 
 type Book {
