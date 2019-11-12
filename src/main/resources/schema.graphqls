@@ -1,5 +1,3 @@
-directive @fetch(from : String!) on FIELD_DEFINITION
-
 type Query {
   book(id: ID!): Book,
   author(id: ID!): Author
